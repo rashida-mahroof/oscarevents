@@ -480,6 +480,9 @@ font-weight: 700;
   margin: 0;
   list-style: none;
 }
+#mobile-nav .menu-active a {
+  color: var(--color-primary);
+}
 
 #mobile-nav ul li {
   position: relative;
