@@ -1731,9 +1731,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (max-width: 768px) {
-  .back-to-top {
-    bottom: 15px;
-  }
+  /* .back-to-top {
+    right: 25px;
+  } */
+  
 
   #faq #faq-list a {
     font-size: 18px;
