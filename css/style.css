@@ -1034,6 +1034,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   overflow: hidden;
   border-right: 3px solid #fff;
   border-bottom: 3px solid #fff;
+  height: 15rem;
 }
 
 #venue .venue-gallery img {
@@ -1150,7 +1151,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #fff;
   z-index: 1;
 }
-
+#gallery .venobox{
+  position: relative;
+  height: 15rem !important;
+  display: inline-flex;
+  width: 100%;
+  
+}
 /*--------------------------------------------------------------
 # supporters Section
 --------------------------------------------------------------*/
@@ -2153,7 +2160,7 @@ border:1px solid #ECECEC;
 .testimonials #customers-testimonials .item {
   text-align: center;
   padding: 50px;
-  margin-bottom:80px;
+  /* margin-bottom:80px; */
   opacity: .2;
   -webkit-transform: scale3d(0.8, 0.8, 1);
   transform: scale3d(0.8, 0.8, 1);
@@ -2193,4 +2200,7 @@ display: inline-block;
   transform-origin: 50% 50% 0;
   transition: all 250ms ease-out 0s;
   width: 20px;
+}
+.testimonials p{
+  text-align: justify;
 }
