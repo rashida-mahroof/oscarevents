@@ -27,7 +27,13 @@
 
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
   </head>
 
   <body>
@@ -190,7 +196,12 @@
   
         </div>
       </section> -->
-
+      <div class="section-header">
+        <h2>Our Location</h2>
+        
+      </div>
+      <div id="map"></div>
+      
     </main>
 
     <!--==========================
@@ -321,6 +332,19 @@
 
     <!-- Template Main Javascript File -->
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script>
+    const map = L.map('map').setView([10.5483027781248, 76.18434010007692], 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    L.marker([10.5483027781248, 76.18434010007692]).addTo(map)
+        .bindPopup('Our Location')
+        .openPopup();
+</script>
+  
   </body>
 
 </html>
